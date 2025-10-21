@@ -5,21 +5,15 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.List;
-import java.util.UUID;
-
 @Entity
-@Table(name = "paises")
+@Table(name = "tiposvehiculos")
 @Getter
 @Setter
 @NoArgsConstructor
-public class PaisEntity {
+public class TipoVehiculoEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id_pais;
+    private Long id_tipo_vehiculo;
 
     private Character nombre;
-
-    @OneToMany(mappedBy = "pais")
-    private List<DepartamentoEntity> departamentos;
 }
