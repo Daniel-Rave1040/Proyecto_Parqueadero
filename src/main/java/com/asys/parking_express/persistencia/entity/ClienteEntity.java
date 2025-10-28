@@ -18,10 +18,10 @@ public class ClienteEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_cliente;
 
-    private Character nombre;
-    private Character apellido;
-    private Character email;
-    private Character telefono;
+    private String nombre;
+    private String apellido;
+    private String email;
+    private String telefono;
 
     @ManyToOne
     @JoinColumn (name = "id_parking")

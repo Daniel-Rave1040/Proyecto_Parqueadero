@@ -17,7 +17,7 @@ public class MovimientosEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_movimiento;
 
-    private Character tipo_movimiento;
+    private String tipo_movimiento;
 
     @OneToMany(mappedBy = "movimientos")
     private List<TurnoEmpleadoEntity> turnosempleados;

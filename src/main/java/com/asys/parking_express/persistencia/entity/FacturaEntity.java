@@ -16,8 +16,8 @@ public class FacturaEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_factura;
 
-    private Character numero_factura;
-    private Character fecha_emision;
+    private String numero_factura;
+    private String fecha_emision;
 
     @ManyToOne
     @JoinColumn (name = "id_pago")

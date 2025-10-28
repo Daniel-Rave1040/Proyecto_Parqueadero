@@ -18,7 +18,7 @@ public class CiudadEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_ciudad;
 
-    private Character nombre;
+    private String nombre;
 
     @ManyToOne
     @JoinColumn (name = "id_departamento")

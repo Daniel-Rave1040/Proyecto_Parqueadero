@@ -18,8 +18,8 @@ public class PagoEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_pago;
 
-    private Character monto;
-    private Character fecha_pago;
+    private String monto;
+    private String fecha_pago;
 
     @OneToOne
     @JoinColumn(name = "id_reserva")
