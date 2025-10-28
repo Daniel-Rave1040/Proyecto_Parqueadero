@@ -4,6 +4,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.List;
+
 @Entity
 @Table(name = "tipospagos")
 @Getter
@@ -16,4 +18,8 @@ public class TiposPagosEntity {
     private Long id_tipo_pago;
 
     private Character nombre;
+
+    @OneToMany(mappedBy = "tiposPagos")
+    private List<PagoEntity> pagos;
+
 }

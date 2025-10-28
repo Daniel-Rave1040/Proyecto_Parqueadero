@@ -1,24 +1,26 @@
 package com.asys.parking_express.persistencia.entity;
+
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.List;
-
 @Entity
-@Table(name = "movimientos")
+@Table(name = "facturas")
 @Getter
 @Setter
 @NoArgsConstructor
 
-public class MovimientosEntity {
+public class FacturaEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id_movimiento;
+    private Long id_factura;
 
-    private Character tipo_movimiento;
+    private Character numero_factura;
+    private Character fecha_emision;
 
-    @OneToMany(mappedBy = "movimientos")
-    private List<TurnoEmpleadoEntity> turnosempleados;
+    @ManyToOne
+    @JoinColumn (name = "id_pago")
+    private PagoEntity pago ;
+
 }
