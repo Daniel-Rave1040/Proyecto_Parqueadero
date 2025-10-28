@@ -16,8 +16,8 @@ public class TurnoEmpleadoEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_turno;
 
-    private Character fecha_inicio;
-    private Character fecha_fin;
+    private String fecha_inicio;
+    private String fecha_fin;
 
     @ManyToOne
     @JoinColumn (name = "id_empleado")

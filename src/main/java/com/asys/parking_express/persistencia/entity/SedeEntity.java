@@ -18,8 +18,8 @@ public class SedeEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_sede;
 
-    private Character nombre;
-    private Character direccion;
+    private String nombre;
+    private String direccion;
 
     @ManyToOne
     @JoinColumn (name = "id_ciudad")

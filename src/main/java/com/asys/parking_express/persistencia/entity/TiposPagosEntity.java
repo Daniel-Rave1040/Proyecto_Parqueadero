@@ -17,7 +17,7 @@ public class TiposPagosEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_tipo_pago;
 
-    private Character nombre;
+    private String nombre;
 
     @OneToMany(mappedBy = "tiposPagos")
     private List<PagoEntity> pagos;

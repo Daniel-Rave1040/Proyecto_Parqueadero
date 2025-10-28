@@ -18,7 +18,7 @@ public class PaisEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_pais;
 
-    private Character nombre;
+    private String nombre;
 
     @OneToMany(mappedBy = "pais")
     private List<DepartamentoEntity> departamentos;

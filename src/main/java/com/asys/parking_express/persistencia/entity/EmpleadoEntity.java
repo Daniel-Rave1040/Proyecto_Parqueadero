@@ -18,9 +18,9 @@ public class EmpleadoEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_empleado;
 
-    private Character nombre;
-    private Character apellido;
-    private Character telefono;
+    private String nombre;
+    private String apellido;
+    private String telefono;
 
     @ManyToOne
     @JoinColumn (name = "id_parking")

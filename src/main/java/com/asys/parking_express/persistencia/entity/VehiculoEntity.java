@@ -16,9 +16,9 @@ public class VehiculoEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_vehiculo;
 
-    private Character matricula;
-    private Character marca;
-    private Character modelo;
+    private String matricula;
+    private String marca;
+    private String modelo;
 
     @OneToOne(mappedBy = "vehiculo")
     private CeldaEntity celda;

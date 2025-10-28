@@ -16,8 +16,8 @@ public class CeldaEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_celda;
 
-    private Character nombre;
-    private Character estado;
+    private String nombre;
+    private String estado;
 
     @ManyToOne
     @JoinColumn (name = "id_sede")

@@ -16,9 +16,9 @@ public class ReservaEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_reserva;
 
-    private Character fecha_hora_reserva;
-    private Character fecha_hora_entrada;
-    private Character fecha_hora_salida;
+    private String fecha_hora_reserva;
+    private String fecha_hora_entrada;
+    private String fecha_hora_salida;
 
     @ManyToOne
     @JoinColumn (name = "id_cliente")

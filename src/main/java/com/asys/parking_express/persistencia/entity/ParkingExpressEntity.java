@@ -18,9 +18,9 @@ public class ParkingExpressEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_parking;
 
-    private Character nombre;
-    private Character direccion;
-    private Character telefono;
+    private String nombre;
+    private String direccion;
+    private String telefono;
 
     @OneToMany(mappedBy = "parkingExpress")
     private List<SedeEntity> sedes;

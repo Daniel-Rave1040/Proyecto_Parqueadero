@@ -17,8 +17,8 @@ public class TipoVehiculoEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_tipo_vehiculo;
 
-    private Character nombre;
-    private Character descripcion;
+    private String nombre;
+    private String descripcion;
 
     @OneToMany(mappedBy = "tipoVehiculo")
     private List<VehiculoEntity> vehiculo;
